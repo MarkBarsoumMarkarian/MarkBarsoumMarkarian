@@ -8,7 +8,7 @@ Based in Beirut, Lebanon · Faculty of Medicine, American University of Beirut �
 
 ## What I build
 
-I write reproducible, open-source pipelines for biomarker discovery and functional interpretation in solid tumors — primarily pancreatic cancer and renal cell carcinoma — using multi-omics data, machine learning, and clinical cohort analysis.
+I write reproducible, open-source pipelines for biomarker discovery and functional interpretation in solid tumors, primarily pancreatic cancer and renal cell carcinoma, using multi-omics data, machine learning, and clinical cohort analysis.
 
 ---
 
