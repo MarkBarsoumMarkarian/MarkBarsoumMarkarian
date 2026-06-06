@@ -37,6 +37,13 @@ I write reproducible, open-source pipelines for biomarker discovery and function
 
 ---
 
+## What I believe
+
+I am a Christian first and a researcher second. That is not a disclaimer, it is the most honest explanation of why I do this work and what I think it is capable of doing.
+The history of medicine, read carefully, is a history of people who were not supposed to succeed, succeeding. Ben Carson. Francis Collins. James Allison. People who went through years of difficulty and came out the other side carrying something that could help millions. I do not think that pattern is accidental. I think God works through people, and I think the preparation, including the hard years, is part of the making of an instrument precise enough to do something that needed doing.
+The question I am most interested in is the one oncology circles around without quite landing on. Not what is cancer. Not how does it resist treatment. But why? why does it take the people it takes? why does it take the innocent? and what does the answer to that question mean for how we fight it? That is a question that cannot be answered by biology alone. But biology is where I can contribute.
+I wrote about this at length here: On Faith, Suffering, and the Geometry of Disease
+
 ## Publications
 
 > Markarian MB. **Resolving the GPRC5A Prognostic Paradox in Pancreatic Ductal Adenocarcinoma.** *Research Square*. 2025. [doi:10.21203/rs.3.rs-9237732/v1](https://www.researchsquare.com/article/rs-9237732/v1)
