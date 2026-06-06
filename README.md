@@ -44,6 +44,8 @@ The history of medicine, read carefully, is a history of people who were not sup
 The question I am most interested in is the one oncology circles around without quite landing on. Not what is cancer. Not how does it resist treatment. But why? why does it take the people it takes? why does it take the innocent? and what does the answer to that question mean for how we fight it? That is a question that cannot be answered by biology alone. But biology is where I can contribute.
 I wrote about this at length here: On Faith, Suffering, and the Geometry of Disease
 
+---
+
 ## Publications
 
 > Markarian MB. **Resolving the GPRC5A Prognostic Paradox in Pancreatic Ductal Adenocarcinoma.** *Research Square*. 2025. [doi:10.21203/rs.3.rs-9237732/v1](https://www.researchsquare.com/article/rs-9237732/v1)
