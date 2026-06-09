@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mark Barsoum Markarian — computational biologist, AUB Beirut. Building tools that treat cancer as a physics problem.">
+  <meta name="author" content="Mark Barsoum Markarian">
+  <title>Mark Barsoum Markarian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Spectral:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1916;
+      --ink-muted: #5a574f;
+      --ink-faint: #9a9790;
+      --paper: #faf9f6;
+      --rule: #e2e0d8;
+      --accent: #2a4a7f;
+    }
+
+    html { font-size: 18px; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.85;
+      min-height: 100vh;
+    }
+
+    nav {
+      border-bottom: 0.5px solid var(--rule);
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    nav .name {
+      font-family: 'Spectral', serif;
+      font-weight: 300;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      text-decoration: none;
+    }
+
+    nav .links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    nav .links a {
+      font-family: 'Spectral', serif;
+      font-weight: 300;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      color: var(--ink-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    nav .links a:hover { color: var(--ink); }
+
+    .hero {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 5rem 2rem 3rem;
+      border-bottom: 0.5px solid var(--rule);
+    }
+
+    .hero-kicker {
+      font-family: 'Spectral', serif;
+      font-size: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-desc {
+      font-size: 1.1rem;
+      color: var(--ink-muted);
+      line-height: 1.7;
+      max-width: 560px;
+    }
+
+    .hero-meta {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-meta a {
+      font-family: 'Spectral', serif;
+      font-size: 0.82rem;
+      font-weight: 300;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 0.5px solid currentColor;
+      padding-bottom: 1px;
+    }
+
+    .hero-meta a:hover { opacity: 0.7; }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 3rem 2rem 6rem;
+    }
+
+    .section-label {
+      font-family: 'Spectral', serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 1.5rem;
+      margin-top: 3.5rem;
+    }
+
+    .project {
+      border-top: 0.5px solid var(--rule);
+      padding: 1.4rem 0;
+    }
+
+    .project:last-child { border-bottom: 0.5px solid var(--rule); }
+
+    .project-title {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+    }
+
+    .project-title a {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .project-title a:hover { color: var(--accent); }
+
+    .project-desc {
+      font-size: 0.92rem;
+      color: var(--ink-muted);
+      line-height: 1.65;
+    }
+
+    .project-tag {
+      display: inline-block;
+      font-family: 'Spectral', serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      border: 0.5px solid var(--rule);
+      padding: 2px 8px;
+      margin-top: 0.6rem;
+      margin-right: 4px;
+    }
+
+    .essay-card {
+      margin-top: 1.5rem;
+      border: 0.5px solid var(--rule);
+      padding: 2rem 2rem 1.8rem;
+      background: #fff;
+    }
+
+    .essay-card-kicker {
+      font-family: 'Spectral', serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 0.8rem;
+    }
+
+    .essay-card h3 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.3;
+      margin-bottom: 0.8rem;
+    }
+
+    .essay-card p {
+      font-size: 0.95rem;
+      color: var(--ink-muted);
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+
+    .essay-card a {
+      font-family: 'Spectral', serif;
+      font-size: 0.82rem;
+      font-weight: 300;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 0.5px solid currentColor;
+      padding-bottom: 1px;
+    }
+
+    .essay-card a:hover { opacity: 0.7; }
+
+    footer {
+      border-top: 0.5px solid var(--rule);
+      padding: 2rem;
+      text-align: center;
+      font-family: 'Spectral', serif;
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: var(--ink-faint);
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="name" href="/">Mark Barsoum Markarian</a>
+    <ul class="links">
+      <li><a href="#research">Research</a></li>
+      <li><a href="essay.html">Essay</a></li>
+      <li><a href="https://github.com/MarkBarsoumMarkarian" target="_blank">GitHub</a></li>
+      <li><a href="https://orcid.org/0009-0006-1240-9534" target="_blank">ORCID</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-kicker">Computational biologist · AUB Beirut</div>
+    <h1>Treating cancer<br>as a physics problem</h1>
+    <p class="hero-desc">
+      I build tools that ask not what a tumor looks like, but where it is — how stable it is in its current state, how close it is to tipping into a different one, and whether that distance can be measured before treatment begins rather than after it fails.
+    </p>
+    <div class="hero-meta">
+      <a href="mailto:mkm25@mail.aub.edu">mkm25@mail.aub.edu</a>
+      <a href="https://github.com/MarkBarsoumMarkarian" target="_blank">GitHub</a>
+      <a href="https://orcid.org/0009-0006-1240-9534" target="_blank">ORCID</a>
+    </div>
+  </div>
+
+  <main id="research">
+
+    <div class="section-label">Current work</div>
+
+    <div class="project">
+      <div class="project-title"><a href="https://github.com/MarkBarsoumMarkarian/oncoAttractor" target="_blank">oncoAttractor</a></div>
+      <div class="project-desc">Reconstructs the transcriptional attractor landscape of tumors from bulk RNA-seq data. Computes quasi-potential geometry — basin depth, basin width, saddle point proximity — to predict treatment resistance and clinical outcome. The saddle point proximity score is the core result: a tumor sitting close to the boundary between a sensitive and a resistant attractor basin, before a single dose of treatment, should carry that instability in its gene expression signature. Validated across TCGA cancer types. R package.</div>
+      <span class="project-tag">R</span>
+      <span class="project-tag">Dynamical systems</span>
+      <span class="project-tag">Oncology</span>
+      <span class="project-tag">In progress</span>
+    </div>
+
+    <div class="project">
+      <div class="project-title"><a href="https://github.com/MarkBarsoumMarkarian/RNA-harmonization-AI" target="_blank">RNA-harmonization-AI</a></div>
+      <div class="project-desc">Batch-harmonized ML framework for cross-cohort RNA biomarker discovery in pancreatic adenocarcinoma. bioRxiv 2025 (doi:10.1101/2025.11.14.688421).</div>
+      <span class="project-tag">R</span>
+      <span class="project-tag">Machine learning</span>
+      <span class="project-tag">PDAC</span>
+    </div>
+
+    <div class="project">
+      <div class="project-title"><a href="https://github.com/MarkBarsoumMarkarian/GPRC5A-paradox-PDAC" target="_blank">GPRC5A-paradox-PDAC</a></div>
+      <div class="project-desc">Resolving the GPRC5A prognostic paradox in PDAC through subtype stratification, treatment deconfounding, proteomics, AlphaFold2, and ML. Manuscript in preparation.</div>
+      <span class="project-tag">R</span>
+      <span class="project-tag">AlphaFold2</span>
+      <span class="project-tag">Proteomics</span>
+    </div>
+
+    <div class="project">
+      <div class="project-title"><a href="https://github.com/MarkBarsoumMarkarian/kidney-fibrosis-grader" target="_blank">kidney-fibrosis-grader</a></div>
+      <div class="project-desc">ResNet-FPN deep learning classifier for kidney biopsy fibrosis grading across 4 classes, with AI-generated pathology reports via LLM. Streamlit app.</div>
+      <span class="project-tag">Python</span>
+      <span class="project-tag">Deep learning</span>
+      <span class="project-tag">Pathology</span>
+    </div>
+
+    <div class="project">
+      <div class="project-title"><a href="https://github.com/MarkBarsoumMarkarian/miRNA-diagnostic-platform" target="_blank">miRNA-diagnostic-platform</a></div>
+      <div class="project-desc">R Shiny platform for miRNA qPCR analysis in renal cell carcinoma: ΔΔCt normalization, geNorm stability, Wilcoxon testing, ROC-AUC, elastic net multi-miRNA classifier.</div>
+      <span class="project-tag">R</span>
+      <span class="project-tag">Shiny</span>
+      <span class="project-tag">miRNA</span>
+    </div>
+
+    <div class="section-label">Essay</div>
+
+    <div class="essay-card">
+      <div class="essay-card-kicker">Personal essay</div>
+      <h3>On Faith, Suffering, and the Geometry of Disease</h3>
+      <p>Before the mathematics, there is a question that has no R package. Not what is cancer, not how does it resist treatment, but why — why does it take the people it takes, and why does it take the innocent. I am a Christian first and a researcher second. This essay is the most honest explanation of why this project exists and what I believe is working through me when I build it.</p>
+      <a href="essay.html">Read the essay →</a>
+    </div>
+
+  </main>
+
+  <footer>
+    Mark Barsoum Markarian · American University of Beirut · Beirut, Lebanon
+  </footer>
+
+</body>
+</html>

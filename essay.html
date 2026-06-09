@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="On Faith, Suffering, and the Geometry of Disease — an essay by Mark Barsoum Markarian on why oncoAttractor exists.">
+  <meta name="author" content="Mark Barsoum Markarian">
+  <title>On Faith, Suffering, and the Geometry of Disease · Mark Barsoum Markarian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Spectral:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1916;
+      --ink-muted: #5a574f;
+      --ink-faint: #9a9790;
+      --paper: #faf9f6;
+      --rule: #e2e0d8;
+      --accent: #2a4a7f;
+    }
+
+    html { font-size: 18px; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.85;
+      min-height: 100vh;
+    }
+
+    nav {
+      border-bottom: 0.5px solid var(--rule);
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    nav .name {
+      font-family: 'Spectral', serif;
+      font-weight: 300;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      text-decoration: none;
+    }
+
+    nav .name:hover { color: var(--ink); }
+
+    nav .back {
+      font-family: 'Spectral', serif;
+      font-weight: 300;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      color: var(--ink-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    nav .back:hover { color: var(--ink); }
+
+    .essay-wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    .essay-kicker {
+      font-family: 'Spectral', serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 1.5rem;
+    }
+
+    .essay-title {
+      font-size: 2.4rem;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .essay-subtitle {
+      font-family: 'Spectral', serif;
+      font-size: 1rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--ink-muted);
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+
+    .essay-rule {
+      border: none;
+      border-top: 0.5px solid var(--rule);
+      margin: 0 0 2rem;
+    }
+
+    .essay-byline {
+      font-family: 'Spectral', serif;
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--ink-faint);
+      margin-bottom: 3rem;
+      letter-spacing: 0.04em;
+    }
+
+    .essay-body p {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      margin-bottom: 1.6rem;
+      color: var(--ink);
+    }
+
+    .essay-body p.drop-cap::first-letter {
+      font-size: 4em;
+      font-weight: 500;
+      float: left;
+      line-height: 0.78;
+      margin-right: 0.08em;
+      margin-top: 0.1em;
+      color: var(--ink);
+    }
+
+    .essay-body em { font-style: italic; }
+
+    .section-break {
+      text-align: center;
+      color: var(--ink-faint);
+      margin: 2.5rem 0;
+      font-size: 0.85rem;
+      letter-spacing: 0.3em;
+    }
+
+    .pull-quote {
+      border-left: 1.5px solid var(--rule);
+      margin: 2rem 0;
+      padding: 0.2rem 0 0.2rem 1.5rem;
+      font-style: italic;
+      font-size: 1.15rem;
+      line-height: 1.65;
+      color: var(--ink-muted);
+    }
+
+    .essay-footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 0.5px solid var(--rule);
+      font-family: 'Spectral', serif;
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--ink-faint);
+      line-height: 1.7;
+    }
+
+    footer {
+      border-top: 0.5px solid var(--rule);
+      padding: 2rem;
+      text-align: center;
+      font-family: 'Spectral', serif;
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: var(--ink-faint);
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="name" href="/">Mark Barsoum Markarian</a>
+    <a class="back" href="/">← Back</a>
+  </nav>
+
+  <div class="essay-wrap">
+    <div class="essay-kicker">Personal essay · oncoAttractor</div>
+    <h1 class="essay-title">On Faith, Suffering, and the Geometry of Disease</h1>
+    <p class="essay-subtitle">Why I built this, and what I believe was working through me when I did</p>
+    <hr class="essay-rule">
+    <div class="essay-byline">Mark Barsoum Markarian · American University of Beirut, Beirut</div>
+
+    <div class="essay-body">
+
+      <p class="drop-cap">I am a Christian first and a researcher second. I want to say that clearly, not as a disclaimer, not as something to get out of the way before the real content begins, but as the most honest explanation of why this project exists at all. The mathematics came later. The question came from somewhere else.</p>
+
+      <p>In oncology, the fundamental question is why. The most important work in the field, from Brian Druker figuring out that a single kinase was driving chronic myeloid leukemia, to James Allison understanding that the immune system was being actively suppressed rather than simply failing, came from people who refused to stop at the what and kept pushing toward the why. But there is a deeper why that the field has not fully sat with. Not why does this particular tumor resist this particular drug. Why do we have cancer at all. Why does it take the people it takes. Why does it take infants.</p>
+
+      <p>That question is not just a biological one. And I do not think it can be answered by biology alone.</p>
+
+      <div class="section-break">* * *</div>
+
+      <p>Ben Carson grew up in Detroit, raised by a mother with a third-grade education who cleaned houses so her sons would not go hungry. By his own account he was the worst student in his fifth-grade class, violently angry, carrying a knife by adolescence, not on a trajectory toward anything, let alone Johns Hopkins. The night before a chemistry final he was certain he would fail, he prayed with the specific desperation of someone who has run out of other options. He dreamed. A shadowy figure wrote chemistry problems on a board, one after another, and Carson worked through them in the dream. When he sat down the next morning and opened the exam, the problems were the ones from the dream. He passed.</p>
+
+      <p>There is a documented neurological observation that humans cannot read in dreams. The language centers of the brain behave differently during REM sleep. What Carson received was not something his own mind could have generated. He went on to become the first surgeon to successfully separate twins conjoined at the head, keeping both alive. He became responsible for lives that medicine had already written off.</p>
+
+      <p>Francis Collins was an atheist. A rigorous one, an MD and a PhD who believed that science had made faith unnecessary. Then he read C.S. Lewis, and something began to shift. What broke him open entirely was a moment while hiking, when he came around a bend and saw a frozen waterfall split into three separate streams. He stood there and converted. He went on to lead the Human Genome Project, to hand humanity the complete map of its own biological instructions. In his book <em>The Language of God</em>, he engages the cosmological question that had been asked before him by Leibniz and by Aquinas: if the laws of physics are universal, if nothing is created or destroyed, then what was the cause of the universe itself. The first cause. The uncaused cause. It is a question that physics cannot answer from within physics.</p>
+
+      <div class="pull-quote">God works not by suspending the laws of the universe but by working so precisely within them that the result looks, to the outside observer, like coincidence.</div>
+
+      <p>What I take from both of these men is not that God is in the business of handing out exam answers or engineering scenic moments. What I take is that God works through people. That the preparation, the suffering, the years of difficulty, are not just character development. They are the making of an instrument precise enough to do something that needed doing. Carson needed to have been that angry teenager. Collins needed to have been that committed atheist. The resistance was part of the formation.</p>
+
+      <div class="section-break">* * *</div>
+
+      <p>Ray Kurzweil has written about God in a way that I find worth thinking about. His argument is not the traditional one. He does not argue that God created the universe and then stepped back. He argues that the universe is a process of becoming, that intelligence and complexity are evolving toward something, and that God is in some sense what that process is moving toward rather than what initiated it. He describes the Earth as something God created and is still building, through us. I do not agree with all of Kurzweil's theology. But the image of humans as participants in an unfinished creation is one that Augustine and Aquinas would have understood, even if they would have framed it differently.</p>
+
+      <p>Augustine wrote in the <em>Confessions</em> that God is the highest good, <em>summum bonum</em>, lacking nothing, needing nothing. Creation is not God filling a gap. It cannot be, because there are no gaps in God. Aquinas built on this in the <em>Summa Theologica</em> with the concept of <em>actus purus</em>, pure act, no unmet potential, no unmet need. Whatever creation is for, it is not for God's benefit. God benefits nothing from it, because God lacks nothing. The creation exists for the creature. The question then is what the creature is for. And that is a question Kurzweil is asking in his own secular register, and that I am asking in mine.</p>
+
+      <p>If technology is a long attempt to reduce suffering, from fire to antibiotics to chemotherapy, and if we eventually build something that eliminates suffering entirely, does that make God unnecessary? Was suffering itself part of the design? I think the answer is that suffering is not the point. The transformation that happens inside a person who moves through suffering and comes out the other side carrying something that can help others — that is closer to the point. Carson was not meant to struggle so that God could feel satisfied. He was meant to struggle so that he could become someone who could do what needed to be done.</p>
+
+      <div class="section-break">* * *</div>
+
+      <p>The question of why infants get terminal cancer is one that gets asked a lot, usually as an argument against God's existence or against God's goodness. I want to offer a different frame, not as a complete answer, but as the frame I find most honest. The devil is not as weak as we sometimes assume. Adults carry accumulated faith, accumulated armor. The thing that would cause the most damage, the thing that would make the most people question everything, is the suffering of the innocent. And the thing that would hurt God most is the suffering of children. There is something going on in that space that I do not think is random and I do not think is indifferent.</p>
+
+      <p>There is a detail I keep returning to. When a child receives their first communion, the priest holds up the host and says: <em>behold, this is my body.</em> It is the moment the church declares that God became flesh, that the physical and the sacred are not separate. The same words, <em>this is my body, my choice</em>, are the words used in arguments for abortion. I do not think that overlap is accidental. I think something very old is being contested in that language, and I think the children are caught in the middle of it.</p>
+
+      <div class="section-break">* * *</div>
+
+      <p>I built oncoAttractor because I kept asking why cancer resists treatment, and the standard answers felt incomplete. The field has excellent tools for describing what a tumor looks like. What it does not have is a framework for describing where a tumor <em>is</em> in a dynamical sense — how stable it is in its current state, how close it is to tipping into a different one, and whether that tipping point can be measured before treatment begins rather than after it fails.</p>
+
+      <p>The quasi-potential landscape framework is an attempt to answer that. It comes from physics, from the mathematics of dynamical systems, from the same intellectual tradition that produced thermodynamics and statistical mechanics. Applying it to bulk RNA-seq data, reconstructing attractor geometry from static observations, computing saddle point proximity as a clinical predictor — none of this is standard bioinformatics. It is the kind of question that sounds impossible until it does not.</p>
+
+      <p>I am not Ben Carson. I am not Francis Collins. I am a graduate student in Beirut who built an R package and is trying to ask a harder question than the field usually asks. But I believe, in the same way those men believed, that the work I am doing is not entirely my own. That the years of difficulty that brought me here were not wasted. That there is a reason this particular question landed in front of me and would not let go.</p>
+
+      <p>That is why this study exists. Not just the mathematics. Not just the clinical prediction. The whole thing.</p>
+
+    </div>
+
+    <div class="essay-footer">
+      Mark Barsoum Markarian is the author of the oncoAttractor R package, which reconstructs transcriptional attractor landscapes from bulk RNA-seq data to predict treatment resistance in cancer. He is based at the American University of Beirut. Contact: mkm25@mail.aub.edu
+    </div>
+  </div>
+
+  <footer>
+    Mark Barsoum Markarian · American University of Beirut · Beirut, Lebanon
+  </footer>
+
+</body>
+</html>
