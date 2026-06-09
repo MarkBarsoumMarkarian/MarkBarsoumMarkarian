@@ -53,3 +53,5 @@ I wrote about this at length here: [On Faith, Suffering, and the Geometry of Dis
 > Markarian MB. **Batch-harmonized machine learning framework for cross-cohort RNA biomarker discovery in pancreatic adenocarcinoma.** *bioRxiv*. 2025. [doi:10.1101/2025.11.14.688421](https://doi.org/10.1101/2025.11.14.688421)
 
 > Markarian MB. **mirBottleneck: A Dual-Score Framework for Identifying Transcriptome-Stabilizing miRNAs and Predicting Survival in Pancreatic Adenocarcinoma.** *Manuscript in preparation.* 2026.
+
+google-site-verification: google442b5c89af0522e3.html
